@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="sample.view.MainView"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <tabs>
+    <Tab text="Untitled Tab 1">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <BorderPane prefHeight="370.0" prefWidth="600.0">
+                     <center>
+                        <GridPane BorderPane.alignment="CENTER">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <BorderPane.margin>
+                              <Insets bottom="20.0" left="30.0" right="30.0" top="20.0" />
+                           </BorderPane.margin>
+                           <children>
+                              <Label text="Servicemanger" />
+                              <Label text="Mechanic" GridPane.rowIndex="1" />
+                              <Label text="Costumer" GridPane.rowIndex="2" />
+                              <Label text="Car" GridPane.rowIndex="3" />
+                              <Label text="Description" GridPane.rowIndex="4" />
+                              <Label text="Sign" GridPane.rowIndex="5" />
+                              <ChoiceBox prefWidth="150.0" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                     </center>
+                  </BorderPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Untitled Tab 2">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
