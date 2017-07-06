@@ -7,9 +7,6 @@ public class Person {
     public String name;
     public String firstname;
 
-    public Person() {
-    }
-
     public Person(String name, String firstname) {
         this.name = name;
         this.firstname = firstname;
